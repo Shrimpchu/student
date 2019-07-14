@@ -1,9 +1,9 @@
 #include "pch.h"
-#include "±êÍ·.h"
+#include "student1.0.h"
 
 student::student()
 {
-	name = "ÎŞÃû";
+	name = "æ— å";
 	classes = 0;
 	grade = 0;
 	level = EOF;
@@ -27,13 +27,13 @@ student::~student()
 string  student::getname()
 {
 	return name;
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 }
 
 string  student::getname() const
 {
 	return name;
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 }
 
 int student::getclass()
@@ -68,7 +68,7 @@ char student::getlevel() const
 
 const ostream & operator<<(ostream & os, student stu)
 {
-	os << "\nĞÕÃû£º" << stu.name << "\n°à¼¶£º" << stu.classes << "\nÄê¼¶£º" << stu.grade << "\n¼¶±ğ£º" << stu.level << "\nÑ§Ğ££º" << stu.school;
+	os << "\nå§“åï¼š" << stu.name << "\nç­çº§ï¼š" << stu.classes << "\nå¹´çº§ï¼š" << stu.grade << "\nçº§åˆ«ï¼š" << stu.level << "\nå­¦æ ¡ï¼š" << stu.school;
 	return os;
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 }
